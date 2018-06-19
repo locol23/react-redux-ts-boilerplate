@@ -1,10 +1,11 @@
-# react-ts-boilerplate
+# react-ts-redux-boilerplate
 
-React boilerplate with TypeScript
+React boilerplate with Redux and TypeScript
 
 ## Tech Stack
 
 - [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
 - [Parcel](https://parceljs.org/)
 - [Prittier](https://prettier.io/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -21,7 +22,7 @@ React boilerplate with TypeScript
 ### Clone the repository
 
 ```bash
-git clone --depth=1 https://github.com/locol23/react-ts-boilerplate.git <project_name>
+git clone --depth=1 https://github.com/locol23/react-redux-ts-boilerplate.git <project_name>
 ```
 
 ### Install dependencies
