@@ -1,6 +1,6 @@
-# react-ts-redux-boilerplate
+# react-redux-ts-boilerplate
 
-React boilerplate with Redux and TypeScript
+React + Redux boilerplate with TypeScript
 
 ## Tech Stack
 
