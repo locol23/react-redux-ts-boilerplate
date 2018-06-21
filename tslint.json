@@ -5,6 +5,7 @@
   "rules": {
     "interface-name": false,
     "no-empty-interface": false,
+    "object-literal-sort-keys" : false,
     "prettier": [
       true, {
         "semi": false,
