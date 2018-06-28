@@ -1,14 +1,21 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src/",
-    "outDir": "./dist/",
+    "target": "esnext",
+    "module": "commonjs",
+    "allowJs": true,
+    "jsx": "react",
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "esnext",
-    "jsx": "react",
-    "allowJs": true
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "outDir": "./dist/",
   },
-  "include": ["./src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }
