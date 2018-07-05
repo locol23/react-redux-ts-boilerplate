@@ -1,10 +1,31 @@
+import { connect } from 'react-redux'
+import { InferableComponentEnhancerWithProps } from 'recompose'
 import { combineReducers } from 'redux'
-import counter, { State as CounterState } from './counter'
+import * as counter from './counter'
+import * as setting from './setting'
 
-export interface State {
-  counter: CounterState
+export interface RootState {
+  counter: counter.CounterState
+  setting: setting.SettingState
 }
 
-export default combineReducers({
-  counter,
+const allAction = { counter, setting }
+
+export type AllAction = typeof allAction
+
+export const rootReducer: (
+  state: RootState,
+  action: any
+) => RootState = combineReducers({
+  counter: counter.reducer,
+  setting: setting.reducer,
 })
+
+export const connector = <OwnProps, StateProps, SelectedAction>(
+  mapStateToProps: (state: RootState, ownProps?: OwnProps) => StateProps,
+  selectAction: (actions: AllAction) => SelectedAction
+): InferableComponentEnhancerWithProps<StateProps & SelectedAction, OwnProps> =>
+  connect(
+    mapStateToProps,
+    selectAction(allAction)
+  )

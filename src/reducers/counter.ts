@@ -41,15 +41,15 @@ export const multiply = (amount: number): Multiply => ({
 export const reset = (): Reset => ({ type: RESET })
 
 // State
-export interface State {
+export interface CounterState {
   value: number
 }
 
-const initialState: State = {
+const initialState: CounterState = {
   value: 0,
 }
 
-export default (state: State = initialState, action: Action) => {
+export const reducer = (state: CounterState = initialState, action: Action) => {
   switch (action.type) {
     case INCREMENT: {
       return {
