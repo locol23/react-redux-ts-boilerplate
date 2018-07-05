@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { lifecycle, StateHandler, StateHandlerMap } from 'recompose'
+import { lifecycle } from 'recompose'
 import styled from 'styled-components'
 import ButtonsContainer from '../../molcules/ButtonsContainer'
 
