@@ -1,5 +1,4 @@
-const GET_TITLE = 'setting/get'
-const SET_TITLE = 'setting/set'
+const SET_TITLE = 'setting/setTitle'
 
 interface SetTitle {
   type: typeof SET_TITLE
