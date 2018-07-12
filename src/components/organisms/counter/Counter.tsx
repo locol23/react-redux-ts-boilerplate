@@ -13,15 +13,13 @@ interface Props {
   reset(): void
 }
 
-const Component: React.SFC<Props> = props => {
-  return (
-    <Container>
-      <Title>{props.title}</Title>
-      <Value>value: {props.value}</Value>
-      <ButtonsContainer {...props} />
-    </Container>
-  )
-}
+const Component: React.SFC<Props> = props => (
+  <Container>
+    <Title>{props.title}</Title>
+    <Value>value: {props.value}</Value>
+    <ButtonsContainer {...props} />
+  </Container>
+)
 
 export const Counter: React.ComponentType<Props> = lifecycle<Props, {}, {}>({
   componentDidMount() {

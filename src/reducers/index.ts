@@ -28,4 +28,4 @@ export const connector = <OwnProps, StateProps, SelectedAction>(
   connect(
     mapStateToProps,
     selectAction(allAction)
-  )
+  ) as any
