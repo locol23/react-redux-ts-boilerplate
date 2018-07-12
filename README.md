@@ -2,6 +2,9 @@
 
 React + Redux boilerplate with TypeScript
 
+[![CircleCI](https://circleci.com/gh/locol23/react-redux-ts-boilerplate.svg?style=svg)](https://circleci.com/gh/locol23/react-redux-ts-boilerplate)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+
 ## Demo
 
 https://react-redux-ts-1024d.firebaseapp.com/
