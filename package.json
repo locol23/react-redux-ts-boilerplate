@@ -27,7 +27,7 @@
   "devDependencies": {
     "@types/react": "16.4.7",
     "@types/react-dom": "16.0.6",
-    "@types/react-redux": "6.0.4",
+    "@types/react-redux": "6.0.5",
     "@types/recompose": "0.26.2",
     "@types/redux-logger": "3.0.6",
     "@types/redux-promise": "0.5.28",
