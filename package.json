@@ -10,8 +10,8 @@
     "parcel": "parcel src/index.html",
     "lint": "tslint src/**/*.ts{,x}",
     "lint-watch": "chokidar src/**/*.ts{,x} -c 'npm run lint'",
-    "build": "run-s clean lint && run-p lint-watch parcel",
-    "build:prod": "run-s clean lint && parcel build src/index.html"
+    "dev": "run-s clean lint && run-p lint-watch parcel",
+    "build": "run-s clean lint && parcel build src/index.html"
   },
   "dependencies": {
     "react": "^16.4.0",
