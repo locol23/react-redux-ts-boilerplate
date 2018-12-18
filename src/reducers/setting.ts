@@ -1,23 +1,19 @@
 const SET_TITLE = 'setting/setTitle'
 
-interface SetTitle {
-  type: typeof SET_TITLE
-  payload: string
-}
+export const setTitle = (title: string) => ({
+  type: SET_TITLE as typeof SET_TITLE,
+  payload: title,
+})
 
-type Action = SetTitle
+type Action = ReturnType<typeof setTitle>
 
-export const setTitle = (title: string) => ({ type: SET_TITLE, payload: title })
-
-export interface SettingState {
-  title: string
-}
-
-const initialState: SettingState = {
+const initialState = {
   title: '',
 }
 
-export const reducer = (state: SettingState = initialState, action: Action) => {
+export type SettingState = typeof initialState
+
+export const reducer = (state = initialState, action: Action) => {
   switch (action.type) {
     case SET_TITLE: {
       return {

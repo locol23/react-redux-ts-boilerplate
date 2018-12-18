@@ -4,52 +4,32 @@ const DECREMENT = 'counter/decrement'
 const MULTIPLY = 'counter/multiply'
 const RESET = 'counter/reset'
 
-// Types
-interface Increment {
-  type: typeof INCREMENT
-}
-
-interface Decrement {
-  type: typeof DECREMENT
-}
-
-interface Multiply {
-  type: typeof MULTIPLY
-  payload: {
-    amount: number
-  }
-}
-
-interface Reset {
-  type: typeof RESET
-}
-
-type Action = Increment | Decrement | Multiply | Reset
-
 // Action Creator
-export const increment = (): Increment => ({ type: INCREMENT })
+export const increment = () => ({ type: INCREMENT as typeof INCREMENT })
 
-export const decrement = (): Decrement => ({ type: DECREMENT })
+export const decrement = () => ({ type: DECREMENT as typeof DECREMENT })
 
-export const multiply = (amount: number): Multiply => ({
-  type: MULTIPLY,
+export const multiply = (amount: number) => ({
+  type: MULTIPLY as typeof MULTIPLY,
   payload: {
     amount,
   },
 })
 
-export const reset = (): Reset => ({ type: RESET })
+export const reset = () => ({ type: RESET as typeof RESET })
+
+type Action = ReturnType<
+  typeof increment | typeof decrement | typeof multiply | typeof reset
+>
 
 // State
-export interface CounterState {
-  value: number
-}
-
-const initialState: CounterState = {
+const initialState = {
   value: 0,
 }
 
-export const reducer = (state: CounterState = initialState, action: Action) => {
+export type CounterState = typeof initialState
+
+export const reducer = (state = initialState, action: Action) => {
   switch (action.type) {
     case INCREMENT: {
       return {
