@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should handle DECREMENT 1`] = `
+Object {
+  "value": -1,
+}
+`;
+
+exports[`should handle INCREMENT 1`] = `
+Object {
+  "value": 1,
+}
+`;
+
+exports[`should handle MULTIPLY 1`] = `
+Object {
+  "value": 0,
+}
+`;
+
+exports[`should handle RESET 1`] = `
+Object {
+  "value": 0,
+}
+`;
+
+exports[`should return the initial state 1`] = `
+Object {
+  "value": 0,
+}
+`;
