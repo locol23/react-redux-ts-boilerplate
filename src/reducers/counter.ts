@@ -55,6 +55,7 @@ export const reducer = (state = initialState, action: Action) => {
       }
     }
     default: {
+      const _: never = action
       return state
     }
   }
