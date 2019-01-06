@@ -14,15 +14,11 @@ const initialState = {
 export type SettingState = typeof initialState
 
 export const reducer = (state = initialState, action: Action) => {
-  switch (action.type) {
-    case SET_TITLE: {
-      return {
-        ...state,
-        title: action.payload,
-      }
-    }
-    default: {
-      return state
+  if (action.type === SET_TITLE) {
+    return {
+      ...state,
+      title: action.payload,
     }
   }
+  return state
 }
