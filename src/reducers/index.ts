@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { InferableComponentEnhancerWithProps } from 'recompose'
-import { combineReducers } from 'redux'
+import { Action, combineReducers } from 'redux'
 import * as counter from './counter'
 import * as setting from './setting'
 
@@ -15,7 +15,7 @@ export type AllAction = typeof allAction
 
 export const rootReducer: (
   state: RootState,
-  action: any
+  action: Action
 ) => RootState = combineReducers({
   counter: counter.reducer,
   setting: setting.reducer,
