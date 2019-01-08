@@ -13,10 +13,7 @@ const allAction = { counter, setting }
 
 export type AllAction = typeof allAction
 
-export const rootReducer: (
-  state: RootState,
-  action: Action
-) => RootState = combineReducers({
+export const rootReducer = combineReducers({
   counter: counter.reducer,
   setting: setting.reducer,
 })

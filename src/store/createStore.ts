@@ -4,5 +4,5 @@ import thunk from 'redux-thunk'
 import { rootReducer } from '../reducers'
 
 export default () => {
-  return createStore(rootReducer as any, applyMiddleware(logger, thunk))
+  return createStore(rootReducer, applyMiddleware(logger, thunk))
 }
