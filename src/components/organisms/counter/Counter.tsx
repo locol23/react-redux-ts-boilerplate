@@ -28,6 +28,9 @@ export const Counter: React.ComponentType<Props> = lifecycle<Props, {}, {}>({
 })(Component)
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
 `
 
@@ -36,6 +39,5 @@ const Title = styled.h1`
 `
 
 const Value = styled.div`
-  text-align: center;
   font-size: 25px;
 `
