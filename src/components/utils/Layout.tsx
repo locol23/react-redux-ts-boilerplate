@@ -2,7 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 interface Props {
-  children: any
+  children: React.ReactNode
 }
 
 const Layout = (props: Props) => <Container>{props.children}</Container>
