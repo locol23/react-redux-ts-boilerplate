@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@types/react": "16.7.18",
-    "@types/jest": "23.3.11",
+    "@types/jest": "23.3.13",
     "@types/react-dom": "16.0.11",
     "@types/react-redux": "6.0.12",
     "@types/recompose": "0.30.0",
