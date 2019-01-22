@@ -5,19 +5,15 @@
     "allowJs": true,
     "jsx": "react",
     "sourceMap": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
+    "strict": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "strictPropertyInitialization": true,
     "rootDir": "src",
     "outDir": "./dist/",
   },
   "exclude": [
     "dist",
-    "node_modules"
+    "node_modules",
+    "coverage"
   ]
 }
