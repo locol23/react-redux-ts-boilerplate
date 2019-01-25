@@ -30,7 +30,7 @@
     "@types/jest": "23.3.11",
     "@types/react-dom": "16.0.11",
     "@types/react-redux": "6.0.12",
-    "@types/recompose": "0.30.0",
+    "@types/recompose": "0.30.2",
     "@types/redux-logger": "3.0.6",
     "@types/redux-promise": "0.5.28",
     "@types/styled-components": "4.1.6",
