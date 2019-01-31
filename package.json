@@ -33,7 +33,7 @@
     "@types/recompose": "0.30.2",
     "@types/redux-logger": "3.0.6",
     "@types/redux-promise": "0.5.28",
-    "@types/styled-components": "4.1.6",
+    "@types/styled-components": "4.1.7",
     "babel-core": "6.26.3",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
