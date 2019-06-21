@@ -1,22 +1,22 @@
 // Action
-const INCREMENT = 'counter/increment'
-const DECREMENT = 'counter/decrement'
-const MULTIPLY = 'counter/multiply'
-const RESET = 'counter/reset'
+const INCREMENT = 'counter/increment' as const
+const DECREMENT = 'counter/decrement' as const
+const MULTIPLY = 'counter/multiply' as const
+const RESET = 'counter/reset' as const
 
 // Action Creator
-export const increment = () => ({ type: INCREMENT as typeof INCREMENT })
+export const increment = () => ({ type: INCREMENT })
 
-export const decrement = () => ({ type: DECREMENT as typeof DECREMENT })
+export const decrement = () => ({ type: DECREMENT })
 
 export const multiply = (amount: number) => ({
-  type: MULTIPLY as typeof MULTIPLY,
+  type: MULTIPLY,
   payload: {
     amount,
   },
 })
 
-export const reset = () => ({ type: RESET as typeof RESET })
+export const reset = () => ({ type: RESET })
 
 type Action = ReturnType<
   typeof increment | typeof decrement | typeof multiply | typeof reset
