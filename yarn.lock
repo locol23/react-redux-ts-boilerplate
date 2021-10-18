@@ -1017,10 +1017,10 @@
   dependencies:
     redux "^3.6.0"
 
-"@types/redux-promise@0.5.28":
-  version "0.5.28"
-  resolved "https://registry.yarnpkg.com/@types/redux-promise/-/redux-promise-0.5.28.tgz#e49d6ed177587be854e82a20a6e8e0610b493e83"
-  integrity sha512-HNWAIjTeMcdAgl4wI2XQdlrJeJMS/TyohD8Yzf3Ebp0fPR4M9wg4/+EBrbbLAsBrGxmSkXdvy1H2ty21dhlS7A==
+"@types/redux-promise@0.5.29":
+  version "0.5.29"
+  resolved "https://registry.yarnpkg.com/@types/redux-promise/-/redux-promise-0.5.29.tgz#9d169b5fe33fd67200814da7e778a1f61b1b4b59"
+  integrity sha512-lCBCTiJCweYtW5YgOIAG400dAi2Cr2IW6mfh1eZ8WqgxTRqPZjLAFQzxQ6oRZaB9g8mdzr28vOc3CAo8y/Na2w==
   dependencies:
     redux "^3.6.0"
 
